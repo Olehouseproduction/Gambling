@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "FuturaPT-Medium";
+  src: url("/fonts/FuturaPT.ttf") format("ttf");
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 16px; /* 114.286% */
+}
+
+$blue: #478bf9;
+
+body {
+  background-color: #110a1d;
+  color: #fff;
+  height: 100%;
+  line-height: 1;
+  font-family: "Lexend", sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow-x: hidden;
+  width: 192rem;
+}
+
+.logo {
+  width: 28.7rem;
+  height: 3.2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 164rem;
+  margin: 1.6rem 14rem 0 14rem;
+  padding: 2.4rem 4.8rem;
+  border-radius: 6.4rem;
+  border: 0.4rem solid $blue;
+  background: #110a1d;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+
+  ul {
+    display: flex;
+  }
+  li {
+    font-weight: 400;
+    line-height: 125%;
+  }
+
+  :not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  div {
+    margin-left: 1.4rem;
+    border: $blue 1px solid;
+    border-radius: 2.4rem;
+    padding: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+}
+
+.btn-language {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background: url(/images/header/planet.svg) left center no-repeat;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.8rem;
+  }
+}
+
+.btn-signUp {
+  background-color: $blue;
+}
+//-------------------MainBlock-----------------------------------------
+.banner {
+  width: 194rem;
+  height: 96rem;
+  display: flex;
+  margin-bottom: 66px;
+}
+
+.banner-container {
+  display: flex;
+}
+
+.leftBlock-Title {
+  padding-top: 22.7rem;
+  padding-left: 14rem;
+  width: 72.8rem;
+
+  // display: flex;
+  // width: 669px;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // gap: 48px;
+}
+
+.titles {
+  h1 {
+    font-size: 9.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 9.6rem; /* 100% */
+    margin-bottom: 2.4rem;
+  }
+
+  span {
+    color: $blue;
+  }
+
+  h4 {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 100% */
+  }
+  margin-bottom: 4.8rem;
+}
+
+.Btn-Cta {
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  text-transform: uppercase;
+  background-color: $blue;
+  border-radius: 4.8rem;
+  display: flex;
+  padding: 2rem 7.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+//----------rightBlock---изменить на rem----------------------
+
+.rightBlock-Blog {
+  margin-top: 132px;
+  margin-right: 140px;
+  margin-left: 522px;
+  display: flex;
+  width: 531px;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 100% */
+    margin-bottom: 24px;
+  }
+
+  .area {
+    border-radius: 100px;
+    border: 3px solid $blue;
+    background: rgba(255, 255, 255, 0.12);
+    height: 595px;
+    display: flex;
+  }
+
+  .area-blog {
+    display: flex;
+    width: 467px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 24px 0px -61px 24px;
+  }
+
+  .container-card {
+    display: flex;
+    padding: 16px 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 196px;
+    background: #1e1231;
+
+    a {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 116.667% */
+    }
+    p {
+      font-family: "Futura PT";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 450;
+      line-height: 16px; /* 114.286% */
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 14px;
+    }
+  }
+
+  .container-card-active {
+    background: $blue;
+  }
+}
+
+.rewiewCard:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.rewiewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.scroll {
+  margin: 96px 16px;
+}
+
+//------------------footer--------------------------
+
+.footer {
+  padding: 40px 140px 24px 140px;
+  // align-items: flex-start;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: flex-end;
+
+  gap: 32px;
+
+  border-radius: 64px 64px 0px 0px;
+  border-top: 4px solid $blue;
+  border-right: 4px solid $blue;
+  border-left: 4px solid $blue;
+  background: #1e1231;
+
+  // width: 1920px;
+}
+
+.footer-inner {
+  width: 1640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.logo-megapartners {
+  padding-bottom: 16px;
+}
+
+.licences-logos {
+  display: flex;
+  gap: 32px;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  a {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+  }
+}
+
+.pages-active {
+  color: $blue;
+  text-decoration-line: underline;
+}
+
+.socials-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.buttons-socials {
+  display: flex;
+  gap: 8px;
+}
+
+.copy {
+  display: flex;
+  padding-top: 8px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  // margin-bottom: 24px;
+  p {
+    font-family: Futura PT;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 16px; /* 133.333% */
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    margin-top: 8px;
+  }
+}
