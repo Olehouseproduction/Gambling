@@ -5,32 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="icon" href="/images/favicon/dark.svg" type="image/x-icon" />
     <title>HOUSE OF GAMBLING</title>
   </head>
+
   <body>
     <div class="wrapper">
       <div class="header">
-        <div class="logo">
+        <div class="header__logo">
           <img src="/images/header/logo_horizontal_clear_white 1.svg" alt="" />
         </div>
-        <nav class="menu">
-          <ul>
-            <li><a href="#" class="menu-link">About us</a></li>
-            <li><a href="#" class="menu-link">Brands</a></li>
-            <li><a href="#" class="menu-link">Commissions</a></li>
-            <li><a href="#" class="menu-link">News</a></li>
-            <li><a href="#" class="menu-link">Contact us</a></li>
-            <li><a href="#" class="menu-link">Careers</a></li>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">About us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Brands</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Commissions</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">News</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Contact us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Careers</a>
+            </li>
           </ul>
         </nav>
-        <div class="buttons">
-          <div class="btn-language">
-            <a href="#">EN</a>
+        <div class="header__buttons">
+          <div class="btn-language button">
+            <span class="current-language">EN</span>
+            <ul class="language-menu">
+              <li class="language-option">DE</li>
+              <li class="language-option">FRA</li>
+              <li class="language-option">RU</li>
+            </ul>
           </div>
-          <div class="btn-logIn">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <div class="btn-logIn button btn-js header__menu">
             <a href="#">LOG IN</a>
           </div>
-          <div class="btn-signUp">
+          <div class="btn-signUp btn-js header__menu">
             <a href="#">SIGN UP</a>
           </div>
         </div>
@@ -46,10 +68,13 @@
               <h4>Raise your ROI with direct advertiser</h4>
             </div>
             <button class="Btn-Cta">Become a Partner</button>
+            <div class="dot-light">
+              <img src="/images/banner/dotLight.svg" alt="" />
+            </div>
           </div>
           <div class="rightBlock-Blog">
             <h2>BLOG</h2>
-            <div class="area">
+            <div class="area scroll-container">
               <div class="area-blog">
                 <div class="rewiewCard">
                   <div class="container-card container-card-active">
@@ -82,7 +107,12 @@
                 </div>
               </div>
               <div class="scroll">
-                <img src="/images/banner/scrollVerctical.png" alt="scroll" />
+                <img
+                  class="scrollable-image"
+                  src="/images/scroll2/Active.svg"
+                  alt="" />
+                <img src="/images/scroll2/Bg Line.svg" alt="" />
+                <!-- <img src="/images/banner/scrollVerctical.png" alt="scroll" /> -->
               </div>
             </div>
           </div>
@@ -91,13 +121,13 @@
       <div class="footer">
         <div class="footer-inner">
           <div class="logos">
-            <div class="logo-megapartners">
+            <!-- <div class="logo-megapartners">
               <a href="#"><img src="/images/footer/logo1.svg" alt="" /></a>
             </div>
             <div class="licences-logos">
               <a href="#"><img src="/images/footer/MGA.svg" alt="" /></a>
               <a href="#"><img src="/images/footer/CURACAO.svg" alt="" /></a>
-            </div>
+            </div> -->
           </div>
           <div class="pages">
             <a href="#" class="pages-active">Terms & Conditions</a>
@@ -109,37 +139,178 @@
           <div class="socials-area">
             <p>Our social media:</p>
             <div class="buttons-socials">
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/twitter.svg" alt="Twitter"
-              /></a>
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/facebook.svg" alt="Facebook"
-              /></a>
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/instagram.svg" alt="Instagram"
-              /></a>
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/linkedIn.svg" alt="LinkedIn"
-              /></a>
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/youTube.svg" alt="YouTube"
-              /></a>
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/tikTok.svg" alt="TikTok"
-              /></a>
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/telegram.svg" alt="Telegram"
-              /></a>
-              <a href="#" class="social-item"
-                ><img src="/images/footer/icons/vk.svg" alt="VK"
-              /></a>
+              <div class="social-twitter">
+                <div class="twitter">
+                  <a href="#" class="social-item">
+                    <img src="/images/footer/icons/twitter.svg" alt="Twitter" />
+                  </a>
+                </div>
+
+                <div class="twitter">
+                  <a href="#" class="social-item">
+                    <img
+                      src="/images/footer/icons/Type=Twitter, Hover=Yes.svg"
+                      alt="Twitter" />
+                  </a>
+                </div>
+              </div>
+              <div class="social-facebook">
+                <div class="facebook">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/facebook.svg"
+                      alt="Facebook"
+                  /></a>
+                </div>
+                <div class="facebook">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/Type=Facebook, Hover=Yes.svg"
+                      alt="Facebook"
+                  /></a>
+                </div>
+              </div>
+              <div class="social-instagram">
+                <div class="instagram">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/instagram.svg"
+                      alt="Instagram"
+                  /></a>
+                </div>
+                <div class="instagram">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/Type=Instagram, Hover=Yes.svg"
+                      alt="Instagram"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="social-linkedIn">
+                <div class="linkedIn">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/linkedIn.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+                <div class="linkedIn">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/Type=LinkedIn, Hover=Yes.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="social-youTube">
+                <div class="youTube">
+                  <a href="#" class="social-item"
+                    ><img src="/images/footer/icons/youTube.svg" alt="YouTube"
+                  /></a>
+                </div>
+                <div class="youTube">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/Type=YouTube, Hover=Yes.svg"
+                      alt="YouTube"
+                  /></a>
+                </div>
+              </div>
+              <div class="social-tikTok">
+                <div class="tikTok">
+                  <a href="#" class="social-item"
+                    ><img src="/images/footer/icons/tikTok.svg" alt="TikTok"
+                  /></a>
+                </div>
+                <div class="tikTok">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/Type=TikTok, Hover=Yes.svg"
+                      alt="TikTok"
+                  /></a>
+                </div>
+              </div>
+              <div class="social-telegram">
+                <div class="telegram">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/telegram.svg"
+                      alt="Telegram"
+                  /></a>
+                </div>
+                <div class="telegram">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/Type=Telegram, Hover=Yes.svg"
+                      alt="Telegram"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="social-vk">
+                <div class="vk">
+                  <a href="#" class="social-item"
+                    ><img src="/images/footer/icons/vk.svg" alt="VK"
+                  /></a>
+                </div>
+                <div class="vk">
+                  <a href="#" class="social-item"
+                    ><img
+                      src="/images/footer/icons/Type=VK, Hover=Yes.svg"
+                      alt="VK"
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="copy">
+        <!-- <div class="copy">
           <p>Copyright © 2023 Megapartners.io</p>
+        </div> -->
+      </div>
+      <div class="dot-light-circle">
+        <img src="/images/banner/dotLight-circle.svg" alt="" />
+      </div>
+      <div class="banner-bg">
+        <div class="line-1 line">
+          <img src="/images/banner-BG/home-page/line1/1.Shield.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line1/2.$.svg" class="dollar" />
+          <img src="/images/banner-BG/home-page/line1/3.Soccer.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line1/4.M.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line1/1.Shield.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line1/2.$.svg" class="dollar" />
+          <img src="/images/banner-BG/home-page/line1/3.Soccer.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line1/4.M.svg" alt="" />
+        </div>
+        <div class="line-2 line">
+          <img src="/images/banner-BG/home-page/line2/1.M.svg" alt="" />
+          <img
+            src="/images/banner-BG/home-page/line2/2.Timer.svg"
+            class="dollar" />
+          <img src="/images/banner-BG/home-page/line2/3.Crown.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line2/4.World.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line2/1.M.svg" alt="" />
+          <img
+            src="/images/banner-BG/home-page/line2/2.Timer.svg"
+            class="dollar" />
+          <img src="/images/banner-BG/home-page/line2/3.Crown.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line2/4.World.svg" alt="" />
+        </div>
+        <div class="line-3 line">
+          <img src="/images/banner-BG/home-page/line3/1.Crown.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line3/2.M.svg" class="dollar" />
+          <img src="/images/banner-BG/home-page/line3/3.Shield.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line3/4.Soccer.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line3/3.Shield.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line3/1.Crown.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line3/2.M.svg" class="dollar" />
+          <img src="/images/banner-BG/home-page/line3/3.Shield.svg" alt="" />
+          <img src="/images/banner-BG/home-page/line3/4.Soccer.svg" alt="" />
         </div>
       </div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
